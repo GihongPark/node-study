@@ -1,0 +1,9 @@
+{
+  "name": "response-check",
+  "version": "1.0.0",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "jake": "^10.4.6"
+  }
+}
