@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>node.js html 렌더링</title>
+    </head>
+    <body>
+        <h1 class="c1">index.ejs</h1>
+        <a href="param?data1=aaa&data2=bbb">parameter</a>
+
+        get <br/>
+        <form action="param" method="get">
+            data1 : <input type="text" name="data1" /><br/>
+            data2 : <input type="text" name="data2" /><br/>
+            <button type="submit">확인</button>
+        </form>
+
+        <hr />
+        post <br/>
+        <form action="param" method="post">
+            data1 : <input type="text" name="data1" /><br/>
+            data2 : <input type="text" name="data2" /><br/>
+            <button type="submit">확인</button>
+        </form>
+
+        <hr />
+        cookie <br/>
+        <a href="save_cookie">쿠키저장</a> <br/>
+        <a href="load_cookie">쿠키로드</a> <br/>
+
+        <hr />
+        session <br/>
+        <a href="save_session">세션저장</a> <br/>
+        <a href="load_session">세션로드</a> <br/>
+
+
+    </body>
+</html>
