@@ -13,6 +13,11 @@ var conn = mysql.createConnection(conn_info);
 conn.connect(function(err) {
     if(err) {
         console.log("접속 오류", err);
+        
+        // Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+        // mysql 8버전부터 authentication 방식이 변경되어 authentication 설정을 바까야함
+        // docker run -d --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mysql --default-authentication-plugin=mysql_native_password
+        // 참고) https://xn--lg3bt3ss6d.com/25
     } else {
         console.log("접속 성공");
 
